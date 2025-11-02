@@ -2,7 +2,7 @@
 - langgraph_react_agent - 使用 Langgraph 官方樣板改寫成 RAG Agent
 - qdrant_insert_data.ipynb - 將文檔切塊、嵌入、insert 到向量資料庫
 # 文檔素材
-- [AWS 官方 EC2 文檔下 PDF](https://docs.aws.amazon.com/zh_tw/AWSEC2/latest/UserGuide/concepts.html)
+- [AWS 官方 EC2 文檔 PDF](https://docs.aws.amazon.com/zh_tw/AWSEC2/latest/UserGuide/concepts.html)
 # RAG 檢索示範影片 （查詢 EC2 設定方式）
 ![img](images/rag-agent-demo.gif)
 
