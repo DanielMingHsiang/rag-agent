@@ -29,6 +29,11 @@
 
 # 細節
 - BAAI/bge-m3 嵌入模型使用「密集向量（語義相似度）」、「稀疏向量（關鍵字匹配）」達到混合檢索 hybrid search
-    - 因測試集素材有限，使用混合檢索是否精準度更高，需要更多的評估才能測試，因爲這個實作目的在於完整實踐一遍整個 RAG 流程，因此不深入探討
-- RAG 檢索精準度提高的方式可以透過「metadata 過濾」，例如檢索過程過明確濾掉不相關的文字分塊，提供給 LLM 與使用者提問更精準匹配的資訊
+    - 因測試集素材有限，使用混合檢索是否精準度更高，需要更多的評估才能測試
+    - 因爲這個實作目的在於完整實踐一遍整個 RAG 流程，因此不深入探討
+- RAG 檢索精準度提高的方式可以透過「metadata 過濾」，例如明確濾掉不相關的文字分塊，提供給 LLM 與使用者提問更精準匹配的資訊
+- multilingual-e5-large 輸入的 tokens 上限只有 512，因此文件分塊不能過大，容易維度 out of range 造成分塊失敗
+- BAAI/bge-m3、multilingual-e5-large 因為開源使用 Huggingface 直接下載模型做向量嵌入
+- Cohere-embed-multilingual-v3.0 使用 AWS Bedrock 平台
+- gemini-embedding-exp-03-07 使用個人每日免費 token 額度測試
 
