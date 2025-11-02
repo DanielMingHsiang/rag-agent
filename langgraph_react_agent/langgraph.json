@@ -1,0 +1,10 @@
+{
+  "dependencies": ["."],
+  "graphs": {
+    "retrieval_graph": "./src/retrieval_graph/graph.py:graph",
+    "react_agent": "./src/react_agent/graph.py:graph",
+    "kb_retrieval_agent": "./src/kb_retrieval_agent/graph.py:graph"
+    
+  },
+  "env": ".env"
+}
