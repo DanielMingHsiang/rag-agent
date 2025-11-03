@@ -100,6 +100,6 @@ def load_chat_model(fully_specified_name: str) -> BaseChatModel:
         return bedrock_chat_model
     elif provider == "ollama":
         from langchain_ollama import ChatOllama
-        return ChatOllama(model=model, base_url="http://192.168.56.2:11434")
+        return ChatOllama(model=model, base_url="...")
     else:
         return init_chat_model(model, model_provider=provider)
