@@ -56,6 +56,8 @@
 - Cohere-embed-multilingual-v3.0 使用 AWS Bedrock 平台
 - gemini-embedding-exp-03-07
     > 因有每日免費 token 額度方便測試比較
+- Embedding 模型也很耗費地端效能
+   - 打 API 在雲端做 embedding 耗費時間幾乎是本地的一半 (本機使用 Apple M3 Pro, 記憶體 36G)
 
 # 測試評估
 - 檢索條件加上 Ranking 機制，可以再次排序更高的相關分塊，但會較慢
